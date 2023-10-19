@@ -34,7 +34,7 @@ const usuariosPut = (req, res = response) => {
 
 const usuariosDelete = (req, res = response) => {
     res.json({
-        message: 'Delete API - controlador'
+        message: 'Delete API en rama prueba01 - controlador'
     })
 }
 
