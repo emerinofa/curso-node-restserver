@@ -37,11 +37,11 @@ class Server {
 
     routes() {
 
-      this.app.use(this.usuariosPath, require('../routes/usuarios'))
+        this.app.use(this.usuariosPath, require('../routes/usuarios'))
 
     }
     listen() {
-        this.app.listen(this.port, () => {
+        this.app.listen(this.port,'0.0.0.0', () => {
             console.log(`Example app listening on port ${this.port}!`)
         })
     }
